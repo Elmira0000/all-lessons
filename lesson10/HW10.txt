@@ -1,0 +1,86 @@
+1. Створи високорівневий тест-кейс для перевірки функціоналу мобільного застосунка (наприклад, Дія або МоноБанк).  
+Обрала моб додаток Monobank.
+ID
+Name\Functionality
+IOS
+Android
+TC1
+Successful installation of “A-bank” from (Apple store for IOS ) and (Google play for Android) 
+Passed
+Passed
+TC2
+Successful user login with valid 4 symbols  password in exist account
+Passed
+Passed
+TC3
+Failed user login with incorrect 4 symbols password in exist account
+Passed
+Passed
+TC4
+The screen in login page starts shaking and above appears the text “НЕВІРНИЙ ПІН” if entered incorrect the 4 symbols password
+Passed
+Failed
+TC5
+The phrase “Номер +(country code) ************** уже зареєстровано” appears if to choose button “Я не клієнт банку” on login page with valid authorisation under the same phone number
+Passed
+Passed
+TC6
+Failed pin code restore in login page if the geolocation is turned off 
+Passed
+Passed
+TC7
+Successful selfie authorization while changing pin code on login page
+Passed
+Passed
+
+
+
+2. Створи 3 низькорівневі тест-кейси на основі високорівневого.
+
+
+ID
+Summary
+Pre-Conditions
+STR
+Expected result
+TC1
+Successful installation of “A-bank” from (Apple store for IOS ) and (Google play for Android) 
+ -
+1. Open App store (for IOS) \Google play (For Android)
+2. Type in the search field “Monobank” 
+3. Press the button “Install” near the “Monobank”
+4. Open the downloaded app.
+App store or Google play is opened
+Text “Monobank” is typed in search field 
+The installation of “Monobank” is started. 
+The downloaded app is opened. 
+TC2
+Successful user login with valid 4 symbols (4100) password in exist account
+Opened login page of “Monobank” in mobile phone
+1. Automatically opened the form “Уведіть ПІН-код”. 
+2. The pin code 4100 is entered.
+1.The pin code 4100 in automatically opened form is entered.
+2. The main menu of “Monobank” is open.
+TC3
+Failed user login with incorrect 4 symbols password in exist account
+Opened login page of “Monobank” in mobile phone
+1.In automatically opened form “Уведіть ПІН-код” entered incorrect (4711) 4 symbols pin code in exist account.
+1.The screen in login page starts shaking and above appears the text “НЕВІРНИЙ ПІН”
+
+
+
+
+
+3. Проестимуй, скільки часу знадобиться для виконання тест-кейсів з попереднього завдання. 
+Відповідь: Приблизно 45 хвилин. 
+4. Для оцінки використай як мінімум 2 техніки (наприклад, WBS та трьохточкову естимацію).
+WBS:
+Спочатку зробила таблиці-заготовки для двох видів тест-кейсів.(5 хвилин)
+Виконала завдання high level test case , так як на нього йде менше часу на опис дій. ( 15хвилин)
+Створила 3 низькорівневі тест-кейси на основі високорівневого з детальним описом дій. (25 хвилин)
+Трьохточкова естимація:
+E = (a + m + b) / 3 Де: E = estimated cost (оцінка часу) a = optimistic value (оптимістичне значення) m = most likely value (реалістичне значення) b = pessimistic value (песимістичне значення)
+E= (15+25+45)\3=28 хвилин.
+
+
+5. Продовжуємо розвивати стартап для застосунка, який дозволяє обмінюватися фотографіями котиків. Команда тестувальників стартапу зростає разом із продуктом. Ви замислилися над створенням тестової стратегії.Спробуй створити документ, який би відповідав потребам вашої команди.
